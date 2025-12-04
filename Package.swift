@@ -22,9 +22,6 @@ let package = Package(
             name: "KountDataCollectorPackage",
             dependencies: ["KountDataCollector"], path: "Sources",
             resources: [.process("Resources/PrivacyInfo.xcprivacy")]),
-        .testTarget(
-            name: "KountDataCollectorPackageTests",
-            dependencies: ["KountDataCollectorPackage"]),
         .binaryTarget(name: "KountDataCollector", path: "./Sources/KountSDK.xcframework"),
     ]
 )
